@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://dcx56bhnu5a0s"]
+
+[ext_resource type="Texture2D" uid="uid://beugaepb20h1a" path="res://Backgrounds/Background.png" id="1_vh8u0"]
+[ext_resource type="Theme" uid="uid://ciatspx4q1138" path="res://Styles/new_theme.tres" id="2_vh8u0"]
+[ext_resource type="Texture2D" uid="uid://8oexn4674iyo" path="res://Backgrounds/Text_Box.png" id="3_btyrf"]
+[ext_resource type="Script" uid="uid://dwwvcmeksnhrw" path="res://addons/godot_ui_animations/animation_nodes/animation_shake.gd" id="3_dqysy"]
+[ext_resource type="Script" uid="uid://do5hw6gyt4wcj" path="res://addons/godot_ui_animations/animation_nodes/animation_scale.gd" id="4_1tcje"]
+[ext_resource type="Texture2D" uid="uid://bmyxd2g52n0dj" path="res://Evil Ass Murder Folder (Do Not Open!!!)/Placeholders for UI Workshop 2/Square_9_Slice_Attempt.png" id="5_btyrf"]
+
+[node name="Control" type="Control" unique_id=842644604]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1725589690]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_vh8u0")
+expand_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1253383470]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1537591604]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_vh8u0")
+
+[node name="AnimationShake" type="Node" parent="VBoxContainer/Button" unique_id=218658745]
+script = ExtResource("3_dqysy")
+metadata/_custom_type_script = "uid://dwwvcmeksnhrw"
+
+[node name="Label" type="Label" parent="VBoxContainer/Button" unique_id=861130290]
+layout_mode = 0
+offset_left = 177.0
+offset_top = 63.0
+offset_right = 217.0
+offset_bottom = 86.0
+text = "hi"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1226547040]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_vh8u0")
+text = "hello 2
+"
+
+[node name="AnimationScale" type="Node" parent="VBoxContainer/Button2" unique_id=100126582]
+script = ExtResource("4_1tcje")
+metadata/_custom_type_script = "uid://do5hw6gyt4wcj"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1615887053]
+layout_mode = 2
+size_flags_vertical = 3
+text = "hello 3
+"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=789758821]
+custom_minimum_size = Vector2(800, 200)
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ProgressBar" type="ProgressBar" parent="HBoxContainer" unique_id=1952072410]
+custom_minimum_size = Vector2(800, 200)
+layout_mode = 2
+step = 1.0
+value = 50.0
+
+[node name="CheckButton" type="CheckButton" parent="HBoxContainer" unique_id=2100564699]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 8
+text = "hi"
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1726552657]
+custom_maximum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1193.0
+offset_top = -814.0
+offset_right = -1093.0
+offset_bottom = -714.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_btyrf")
+stretch_mode = 0
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1682293739]
+layout_mode = 0
+offset_left = 19.0
+offset_top = -499.0
+offset_right = 1237.0
+offset_bottom = -72.0
+theme = ExtResource("2_vh8u0")
+texture = ExtResource("3_btyrf")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=2014847390]
+layout_mode = 0
+offset_left = -752.0
+offset_top = -492.0
+offset_right = -547.0
+offset_bottom = -145.0
+texture = ExtResource("3_btyrf")
+region_rect = Rect2(9, -1, 1202, 421)
+patch_margin_left = 70
+patch_margin_top = 62
+patch_margin_right = 72
+patch_margin_bottom = 62
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="." unique_id=2126209592]
+layout_mode = 0
+offset_left = -767.0
+offset_top = 157.0
+offset_right = -514.0
+offset_bottom = 323.0
+texture = ExtResource("5_btyrf")
+region_rect = Rect2(0, 0, 233, 232)
+patch_margin_left = 59
+patch_margin_top = 48
+patch_margin_right = 58
+patch_margin_bottom = 49

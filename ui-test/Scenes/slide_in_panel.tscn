@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://b3um7a8ujgw3k"]
+
+[ext_resource type="Script" uid="uid://ww280jf1p0lw" path="res://Scripts/slide_in_panel.gd" id="1_r1yyq"]
+[ext_resource type="Theme" uid="uid://50fpexa7vga2" path="res://Styles/test_theme.tres" id="1_yxkn4"]
+[ext_resource type="Texture2D" uid="uid://csws7o25hk00l" path="res://UI Assets for Workshop/UI_Menu_V1.png" id="3_pjijb"]
+[ext_resource type="Script" uid="uid://dwwvcmeksnhrw" path="res://addons/godot_ui_animations/animation_nodes/animation_shake.gd" id="4_2d6k6"]
+[ext_resource type="FontFile" uid="uid://bx05g72dd88dk" path="res://Fonts/BrunoAce-Regular.ttf" id="4_ckyx4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2d6k6"]
+texture = ExtResource("3_pjijb")
+texture_margin_left = 251.0
+texture_margin_top = 59.0
+texture_margin_right = 54.0
+texture_margin_bottom = 77.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(0, 0, 750, 750)
+
+[node name="Slide in panel" type="Control" unique_id=2050963133]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r1yyq")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1621989069]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -414.75
+offset_top = -290.0
+offset_right = 414.75
+offset_bottom = 290.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_yxkn4")
+theme_override_styles/panel = SubResource("StyleBoxTexture_2d6k6")
+
+[node name="Button" type="Button" parent="PanelContainer" unique_id=1649267105]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "Go Back"
+
+[node name="AnimationShake" type="Node" parent="PanelContainer/Button" unique_id=851637268]
+script = ExtResource("4_2d6k6")
+metadata/_custom_type_script = "uid://dwwvcmeksnhrw"
+
+[node name="Label" type="Label" parent="PanelContainer" unique_id=907633341]
+layout_mode = 2
+text = "look im a panel haha"
+
+[node name="Label2" type="Label" parent="PanelContainer" unique_id=144470159]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("4_ckyx4")
+text = "the uh header cant fit up there"
+
+[connection signal="pressed" from="PanelContainer/Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,193 @@
+[gd_scene format=3 uid="uid://ucm7ihwc3301"]
+
+[ext_resource type="Texture2D" uid="uid://b5vm300hpcwlf" path="res://UI Assets for Workshop/Button_Normal.png" id="1_50ct6"]
+[ext_resource type="Texture2D" uid="uid://oep7flq0p5mv" path="res://UI Assets for Workshop/Button_Pressed.png" id="2_hb2xm"]
+[ext_resource type="Texture2D" uid="uid://cv381ndxqce2w" path="res://UI Assets for Workshop/Button_Hover.png" id="3_ak5v8"]
+[ext_resource type="Script" uid="uid://do5hw6gyt4wcj" path="res://addons/godot_ui_animations/animation_nodes/animation_scale.gd" id="4_hb2xm"]
+[ext_resource type="Theme" uid="uid://50fpexa7vga2" path="res://Styles/test_theme.tres" id="5_ak5v8"]
+[ext_resource type="Texture2D" uid="uid://bi036b7xivi47" path="res://UI Assets for Workshop/UI_Menu_V2.png" id="6_x033f"]
+[ext_resource type="Script" uid="uid://xivbl133jd43" path="res://Scripts/slide in button.gd" id="7_d3awe"]
+[ext_resource type="PackedScene" uid="uid://b3um7a8ujgw3k" path="res://Scenes/slide_in_panel.tscn" id="8_d3awe"]
+[ext_resource type="Script" uid="uid://dwwvcmeksnhrw" path="res://addons/godot_ui_animations/animation_nodes/animation_shake.gd" id="8_yglu3"]
+
+[node name="Test Scene" type="Control" unique_id=1058992762]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.0031506333
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=447447503]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -44.5
+offset_right = 110.0
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer" unique_id=641251385]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("1_50ct6")
+texture_pressed = ExtResource("2_hb2xm")
+texture_hover = ExtResource("3_ak5v8")
+
+[node name="AnimationScale" type="Node" parent="VBoxContainer/TextureButton" unique_id=734606552]
+script = ExtResource("4_hb2xm")
+metadata/_custom_type_script = "uid://do5hw6gyt4wcj"
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer" unique_id=520467399]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("1_50ct6")
+texture_pressed = ExtResource("2_hb2xm")
+texture_hover = ExtResource("3_ak5v8")
+
+[node name="AnimationScale" type="Node" parent="VBoxContainer/TextureButton2" unique_id=863670135]
+script = ExtResource("4_hb2xm")
+metadata/_custom_type_script = "uid://do5hw6gyt4wcj"
+
+[node name="TextureButton3" type="TextureButton" parent="VBoxContainer" unique_id=1147831958]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("1_50ct6")
+texture_pressed = ExtResource("2_hb2xm")
+texture_hover = ExtResource("3_ak5v8")
+
+[node name="AnimationScale" type="Node" parent="VBoxContainer/TextureButton3" unique_id=1327662716]
+script = ExtResource("4_hb2xm")
+metadata/_custom_type_script = "uid://do5hw6gyt4wcj"
+
+[node name="TextureButton4" type="TextureButton" parent="VBoxContainer" unique_id=1720452443]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+texture_normal = ExtResource("1_50ct6")
+texture_pressed = ExtResource("2_hb2xm")
+texture_hover = ExtResource("3_ak5v8")
+
+[node name="AnimationScale" type="Node" parent="VBoxContainer/TextureButton4" unique_id=1111034849]
+script = ExtResource("4_hb2xm")
+metadata/_custom_type_script = "uid://do5hw6gyt4wcj"
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=2108625145]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme = ExtResource("5_ak5v8")
+text = "hello"
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1170602575]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 305.0
+grow_vertical = 2
+theme = ExtResource("5_ak5v8")
+
+[node name="Button" type="Button" parent="PanelContainer" unique_id=1305078941]
+layout_mode = 2
+size_flags_vertical = 4
+theme = ExtResource("5_ak5v8")
+text = "hello"
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=5302741]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("5_ak5v8")
+columns = 2
+
+[node name="Button" type="Button" parent="GridContainer" unique_id=1895126234]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+text = "hello
+"
+
+[node name="Button2" type="Button" parent="GridContainer" unique_id=1820597950]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+text = "hello
+"
+
+[node name="Button3" type="Button" parent="GridContainer" unique_id=1551511424]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+text = "hello
+"
+
+[node name="Button4" type="Button" parent="GridContainer" unique_id=231235271]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+text = "hello
+"
+
+[node name="Button5" type="Button" parent="GridContainer" unique_id=354509164]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+text = "hello
+"
+
+[node name="Button6" type="Button" parent="GridContainer" unique_id=2057975896]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+text = "hello
+"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=707330054]
+z_index = -11
+layout_mode = 0
+offset_left = 1504.4462
+offset_top = 139.26073
+offset_right = 1965.783
+offset_bottom = 947.8368
+texture = ExtResource("6_x033f")
+patch_margin_left = 223
+patch_margin_top = 53
+patch_margin_right = 34
+patch_margin_bottom = 45
+
+[node name="Button" type="Button" parent="." unique_id=448394982]
+layout_mode = 0
+offset_left = 1210.1206
+offset_top = 671.1907
+offset_right = 1852.1206
+offset_bottom = 838.9733
+theme = ExtResource("5_ak5v8")
+text = "this button opens something"
+script = ExtResource("7_d3awe")
+
+[node name="AnimationShake" type="Node" parent="Button" unique_id=822953501]
+script = ExtResource("8_yglu3")
+metadata/_custom_type_script = "uid://dwwvcmeksnhrw"
+
+[node name="Slide in panel" parent="." unique_id=2050963133 instance=ExtResource("8_d3awe")]
+layout_mode = 1
+offset_left = 1979.0879
+offset_top = 24.764755
+offset_right = 1979.0879
+offset_bottom = 24.76477
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

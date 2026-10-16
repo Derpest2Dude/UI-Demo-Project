@@ -1,0 +1,12 @@
+[gd_resource type="Theme" format=3 uid="uid://ciatspx4q1138"]
+
+[ext_resource type="StyleBox" uid="uid://dbyxcoog7oneb" path="res://Styles/new_style_box_texture.tres" id="1_amlv4"]
+
+[sub_resource type="SystemFont" id="SystemFont_j2q5q"]
+
+[resource]
+default_base_scale = 0.6
+default_font = SubResource("SystemFont_j2q5q")
+Button/styles/hover = ExtResource("1_amlv4")
+Button/styles/normal = ExtResource("1_amlv4")
+Button/styles/pressed = ExtResource("1_amlv4")
