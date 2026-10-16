@@ -121,10 +121,10 @@ texture = ExtResource("3_btyrf")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=2014847390]
 layout_mode = 0
-offset_left = -752.0
-offset_top = -492.0
-offset_right = -547.0
-offset_bottom = -145.0
+offset_left = -767.0
+offset_top = -345.0
+offset_right = -279.0
+offset_bottom = -161.0
 texture = ExtResource("3_btyrf")
 region_rect = Rect2(9, -1, 1202, 421)
 patch_margin_left = 70

@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://do5hw6gyt4wcj" path="res://addons/godot_ui_animations/animation_nodes/animation_scale.gd" id="4_hb2xm"]
 [ext_resource type="Theme" uid="uid://50fpexa7vga2" path="res://Styles/test_theme.tres" id="5_ak5v8"]
 [ext_resource type="Texture2D" uid="uid://bi036b7xivi47" path="res://UI Assets for Workshop/UI_Menu_V2.png" id="6_x033f"]
+[ext_resource type="Texture2D" uid="uid://df8t3lqjuwble" path="res://UI Assets for Workshop/UI_Menu_V3.png" id="6_yglu3"]
 [ext_resource type="Script" uid="uid://xivbl133jd43" path="res://Scripts/slide in button.gd" id="7_d3awe"]
 [ext_resource type="PackedScene" uid="uid://b3um7a8ujgw3k" path="res://Scenes/slide_in_panel.tscn" id="8_d3awe"]
 [ext_resource type="Script" uid="uid://dwwvcmeksnhrw" path="res://addons/godot_ui_animations/animation_nodes/animation_shake.gd" id="8_yglu3"]
@@ -87,7 +88,8 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
 theme = ExtResource("5_ak5v8")
-text = "hello"
+text = "^texture^
+buttons"
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1170602575]
 layout_mode = 1
@@ -101,7 +103,9 @@ theme = ExtResource("5_ak5v8")
 layout_mode = 2
 size_flags_vertical = 4
 theme = ExtResource("5_ak5v8")
-text = "hello"
+text = "button 
+with 
+theme"
 
 [node name="GridContainer" type="GridContainer" parent="." unique_id=5302741]
 layout_mode = 1
@@ -159,15 +163,15 @@ text = "hello
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=707330054]
 z_index = -11
 layout_mode = 0
-offset_left = 1504.4462
-offset_top = 139.26073
-offset_right = 1965.783
-offset_bottom = 947.8368
-texture = ExtResource("6_x033f")
-patch_margin_left = 223
-patch_margin_top = 53
-patch_margin_right = 34
-patch_margin_bottom = 45
+offset_left = 3385.6528
+offset_top = -1067.6722
+offset_right = 5209.3213
+offset_bottom = -440.98132
+texture = ExtResource("6_yglu3")
+patch_margin_left = 72
+patch_margin_top = 79
+patch_margin_right = 73
+patch_margin_bottom = 89
 
 [node name="Button" type="Button" parent="." unique_id=448394982]
 layout_mode = 0
@@ -189,5 +193,26 @@ offset_left = 1979.0879
 offset_top = 24.764755
 offset_right = 1979.0879
 offset_bottom = 24.76477
+
+[node name="Button2" type="Button" parent="." unique_id=716988956]
+layout_mode = 0
+offset_left = 606.2806
+offset_top = 88.09028
+offset_right = 922.16223
+offset_bottom = 219.12094
+text = "ugly ahh button"
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="." unique_id=155590595]
+z_index = -11
+layout_mode = 0
+offset_left = 407.26318
+offset_top = -869.2875
+offset_right = 1207.0962
+offset_bottom = -510.648
+texture = ExtResource("6_x033f")
+patch_margin_left = 223
+patch_margin_top = 53
+patch_margin_right = 34
+patch_margin_bottom = 45
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

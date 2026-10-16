@@ -8,12 +8,10 @@
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2d6k6"]
 texture = ExtResource("3_pjijb")
-texture_margin_left = 251.0
-texture_margin_top = 59.0
+texture_margin_left = 30.0
+texture_margin_top = 46.0
 texture_margin_right = 54.0
-texture_margin_bottom = 77.0
-axis_stretch_horizontal = 2
-axis_stretch_vertical = 2
+texture_margin_bottom = 26.0
 region_rect = Rect2(0, 0, 750, 750)
 
 [node name="Slide in panel" type="Control" unique_id=2050963133]
@@ -34,8 +32,8 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -414.75
 offset_top = -290.0
-offset_right = 414.75
-offset_bottom = 290.0
+offset_right = 557.0
+offset_bottom = 232.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_yxkn4")
